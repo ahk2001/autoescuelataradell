@@ -830,7 +830,19 @@
     @media (max-width: 768px) {
       .hero-editorial {
         padding-bottom: 56px;
-        padding-top: 102px;
+        padding-top: clamp(150px, 21vh, 195px);
+      }
+      body.video-intro-done .hero-img-el {
+        filter: brightness(0.98) contrast(1.03);
+      }
+      .hero-vignette {
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.22) 0%,
+          rgba(0, 0, 0, 0.44) 26%,
+          rgba(0, 0, 0, 0.08) 54%,
+          rgba(0, 0, 0, 0.36) 100%
+        );
       }
       .hero-editorial-inner {
         padding: 0 1rem;
